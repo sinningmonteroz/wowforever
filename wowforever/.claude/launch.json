@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "wowforever-static",
+      "runtimeExecutable": "php",
+      "runtimeArgs": ["-S", "localhost:8642", "-t", "."],
+      "port": 8642
+    }
+  ]
+}

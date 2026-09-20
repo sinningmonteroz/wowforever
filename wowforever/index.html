@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title id="pageTitle">WoW Forever · Puntos de Raza/Clase PvP</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="top">
+    <div>
+      <h1 id="siteTitle">WoW Forever</h1>
+      <p id="tagline"></p>
+    </div>
+    <button id="langToggle" type="button">EN</button>
+  </header>
+
+  <section class="picker" id="pickerSection">
+    <h2 id="pickerHeading"></h2>
+    <div class="class-grid" id="classGrid"></div>
+
+    <div class="highlights">
+      <div class="highlight-col">
+        <h3>🏆 <span id="topTenTitle"></span></h3>
+        <div class="combo-mini-list" id="topTenList"></div>
+      </div>
+      <div class="highlight-col">
+        <h3>💀 <span id="worstTenTitle"></span></h3>
+        <div class="combo-mini-list" id="worstTenList"></div>
+      </div>
+    </div>
+    <p class="combos-note" id="combosNote"></p>
+  </section>
+
+  <section class="results" id="resultsSection" style="display:none;">
+    <div class="results-header">
+      <h2 id="resultsHeading"></h2>
+      <button id="backBtn" type="button"></button>
+    </div>
+    <p class="results-sub" id="resultsSub"></p>
+
+    <div class="spec-tabs" id="specTabs"></div>
+    <div class="mode-toggle" id="modeToggle">
+      <button class="mode-btn" data-mode="pvp" id="modePvpBtn" type="button"></button>
+      <button class="mode-btn" data-mode="pve" id="modePveBtn" type="button"></button>
+    </div>
+    <div class="spec-summary" id="specSummary"></div>
+
+    <div class="skyborne-note" id="skyborneNote" style="display:none;"></div>
+
+    <div id="raceList"></div>
+  </section>
+
+  <details class="methodology">
+    <summary id="methodologySummary"></summary>
+    <p id="methodologyText"></p>
+  </details>
+
+  <footer class="site">
+    <p id="sourceNote"></p>
+  </footer>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/scoring.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
